@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+.header {
+    padding: 30px;
+    text-align: left;
+    background: DarkSeaGreen;
+    color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: DarkGreen;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 35%; /* IE10 */
+    flex: 35%;
+    background-color: #e1efe4;
+    padding: 20px;
+    border-right: 5px solid #e1efe4;
+    max-width: 300px;
+}
+
+/* Main column */
+.main {   
+    -ms-flex: 65%; /* IE10 */
+    flex: 65%;
+    background-color: white;
+    padding: 20px;
+}
+
+.footer {
+    padding: 10px; /* Some padding */
+    text-align: center; /* Center text*/
+    background: DarkSeaGreen; /* Grey background */
+    color: white;
+}
+
+.profile {
+  position: absolute;
+  right: 15px;
+  top: 30px;
+}
+
+.lol {
+  padding-right: 200px;
+}
+
+.border {
+  border-bottom: 3px solid lightgrey; 
+  padding-bottom: 20px; 
+  min-height: 220px
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>DragonVale2133</h1>
+  <a href ="http://www.valleyofunicorns.com/Player/17640/" target="_blank"><img src="http://avatars.valleyofunicorns.com/17640_avatar.png" class="profile"></a>
+</div>
+<div class="navbar">
+  <a href="#Explore">Explore</a>
+  <a href="#Guides">Guides</a>
+  <a href="#Blog">Blog</a>
+  </div>
+<div class="row">
+  <div class="side">
+    <h2 style="color: green">Welcome!</h2>
+    <p>I created this website to host my horse stories. Here I also post on my blog, where I talk about VoU updates.<br>Originally I used Weebly to make my original site, but I suspect that I may run out of bandwidth soon on there, so I moved to this.</p>
+    <img src="http://valleyofunicorns.com/images/horse_images/806.png" alt="Here is a Capricorn Hippocampus.">
+  </div>
+  <div class="main">
+    <div class="border">
+      <h2>Explore...</h2>
+      <p class="lol">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at ultricies dolor, ut pretium quam. Curabitur tempor vel purus sed convallis. Integer augue risus, mattis ut semper id, pellentesque quis erat. Proin vulputate consequat metus et pulvinar. Quisque ut iaculis orci. Nullam pharetra mattis laoreet. Integer malesuada ut magna non eleifend. Nam porttitor dui in magna auctor facilisis ut quis dui. Ut in purus nunc. <a href="#" style="color: green">Start venturing!</a></p>
+      <img src="http://valleyofunicorns.com/images/horse_images/503.png" style="position: absolute; width: 200px; right: 10px; top: 250px ; position: absolute">
+    </div>
+    <div class="border">
+      <h2>Guides</h2>
+      <p class="lol" style="max-height: 40px;">Need to know when a Hippocampus grows up or you don't even know where to where to shtart out? Well, you're in luck, because on this site I compile useful guides for new players or also veterans.<br><br><em>PLANNED: Archive feature with every color and spreadsheet</em></p>
+      <img src="http://valleyofunicorns.com/images/horse_images/811_ad.png" style="position: absolute; width: 200px; right: 5px; top: 500px;">
+      </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>I do not own any of the images. All images belong to the owners of valleyofunicorns.com.
+</div>
+</body>
+</html>
