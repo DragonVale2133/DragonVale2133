@@ -9,11 +9,13 @@
            var input = document.getElementById('query').value.toLowerCase();
             switch(input) {
                 case 'Anmei':
+                   //put this to see if this code runs 
+                   //alert("Test");// UNCOMMENT THIS
                     window.location.replace('guides.html');
                     break;
                 default://no keyword detected so we submit the form.
-                    document.getElementById("query").value = "";
-                    return false;
+                  document.getElementById("query").value = "";
+                    return true;
                     break;
             }
             return false;//don't let the form submit
