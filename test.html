@@ -11,14 +11,6 @@
                 case 'Anmei':
                     window.location.replace('guides.html');
                     break;
-                case 'Wrong. Try again.':
-                    document.getElementById("query").value = "Are you even trying?";
-                    return false;
-                    break;
-                case 'Are you even trying?':
-                    document.getElementById("query").value = "Just stop it.";
-                    return false;
-                    break;
                 default://no keyword detected so we submit the form.
                     document.getElementById("query").value = "Wrong. Try again.";
                     return false;
