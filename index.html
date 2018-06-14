@@ -8,31 +8,26 @@
 * {
     box-sizing: border-box;
 }
-
 /* Style the body */
 body {
     font-family: Arial;
     margin: 0;
 }
-
 .header {
     padding: 30px;
     text-align: left;
     background: DarkSeaGreen;
     color: white;
 }
-
 /* Increase the font size of the heading */
 .header h1 {
     font-size: 40px;
 }
-
 /* Style the top navigation bar */
 .navbar {
     overflow: hidden;
     background-color: DarkGreen;
 }
-
 /* Style the navigation bar links */
 .navbar a {
     float: left;
@@ -42,18 +37,15 @@ body {
     padding: 14px 20px;
     text-decoration: none;
 }
-
 /* Right-aligned link */
 .navbar a.right {
     float: right;
 }
-
 /* Change color on hover */
 .navbar a:hover {
     background-color: #ddd;
     color: black;
 }
-
 /* Column container */
 .row {  
     display: -ms-flexbox; /* IE10 */
@@ -61,18 +53,15 @@ body {
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
 }
-
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
     -ms-flex: 35%; /* IE10 */
-    flex: 35%;
+    flex: 5%;
     background-color: #e1efe4;
     padding: 20px;
     border-right: 5px solid #e1efe4;
-    max-width: 300px;
 }
-
 /* Main column */
 .main {   
     -ms-flex: 65%; /* IE10 */
@@ -80,37 +69,30 @@ body {
     background-color: white;
     padding: 20px;
 }
-
 .footer {
     padding: 10px; /* Some padding */
     text-align: center; /* Center text*/
     background: DarkSeaGreen; /* Grey background */
     color: white;
 }
-
 .profile {
   position: absolute;
   right: 15px;
   top: 30px;
 }
-
 .lol {
-  padding-right: 200px;
 }
-
 .border {
   border-bottom: 3px solid lightgrey; 
   padding-bottom: 20px; 
-  min-height: 220px
+  min-height: 250px
 }
-
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
     .row {   
         flex-direction: column;
     }
 }
-
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
     .navbar a {
@@ -134,24 +116,22 @@ body {
   <div class="side">
     <h2 style="color: green">Welcome!</h2>
     <p>I created this website to host my horse stories. Here I also post on my blog, where I talk about VoU updates.<br>Originally I used Weebly to make my original site, but I suspect that I may run out of bandwidth soon on there, so I moved to this new site I coded with HTML.</p>
-    <img src="http://valleyofunicorns.com/images/horse_images/806.png" alt="Here is a Capricorn Hippocampus."><br><br>
+    <center><img src="http://valleyofunicorns.com/images/horse_images/806.png" alt="Here is a Capricorn Hippocampus."></center><br><br>
     <p style="color: red; text-align: center;"><strong>This site is a work-in-progress. Not all elements will function.       </strong></p>
   </div>
   <div class="main">
     <div class="border">
-      <h2>Explore...</h2>
+      <h2><img src="http://valleyofunicorns.com/images/horse_images/503.png" style="float: right; width: 200px;">Explore...</h2>
       <p class="lol">The Valley is a vast and mysterious land, populated with many mythological creatures such as Unicorns, Phoenixes, Dragons and more. While the isolated area is still riddled with quite a few mysteries, Horse Keepers like to collect the various creatures of the Valley for their looks and to uncover what is in the valley. But not every part of the place has been properly explored and uncovered. <a href="#" style="color: green">Start venturing!</a></p>
-      <img src="http://valleyofunicorns.com/images/horse_images/503.png" style="position: absolute; width: 200px; right: 10px; top: 250px ; position: absolute">
     </div>
     <div class="border">
-      <h2>Guides!</h2>
+      <h2><img src="http://valleyofunicorns.com/images/horse_images/811_ad.png" style="float: right; width: 200px;">Guides!</h2>
       <p class="lol" style="max-height: 40px;">Need to know when a Hippocampus grows up or you don't even know where to where to start out? Well, you're in luck, because on this site I compile useful guides for new players or also veterans. Come take a look! Guides include a species reference sheet and a checklist for every color in the game.
       <a href="#" style="color: green">View list of guides</a><br><br></p>
-      <img src="http://valleyofunicorns.com/images/horse_images/811_ad.png" style="position: absolute; width: 200px; right: 5px; top: 500px;">
       </div>
-      <h2>Blog</h2>
+      <h2><img src="http://valleyofunicorns.com/images/horse_images/26.png" style="float: right; width: 200px;">Blog</h2>
       <div style="padding-bottom: 20px; min-height: 220px">
-      <p class="lol" style="max-height: 40px; padding-bottom: 20px">Want to know about the latest VoU news and catch the latest updates on the various stories on this website, or just VoU stuff in general? I cover many things VoU-related in my blog, some personal like my various hoards and auctions and some general things such as updates on the game and new colors.  <a href="#" style="color: green">Take a look at the blog</a></p><img src="http://valleyofunicorns.com/images/horse_images/26.png" style="position: absolute; width: 200px; right: 5px; top: 760px;">
+      <p class="lol" style="max-height: 40px; padding-bottom: 20px">Want to know about the latest VoU news and catch the latest updates on the various stories on this website, or just VoU stuff in general? I cover many things VoU-related in my blog, some personal like my various hoards and auctions and some general things such as updates on the game and new colors.  <a href="#" style="color: green">Take a look at the blog</a></p>
       </div>
   </div>
 </div>
