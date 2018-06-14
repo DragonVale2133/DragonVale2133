@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset = "UTF-8">
+ <title>textBoxes.html</title>
+<script type='text/javascript'>
+        function redirect() {
+           //look for text inside the NEW textbox
+           var input = document.getElementById('query').value.toLowerCase();
+            switch(input) {
+                case 'Green':
+                   //put this to see if this code runs 
+                   //alert("Test");// UNCOMMENT THIS
+                    window.location.replace('page1.html');
+                    break;
+                case '1':
+                    window.location.replace('guides.html');
+                    break;
+                default://no keyword detected so we submit the form.
+                    return true;
+                    break;
+            }
+            return false;//don't let the form submit
+        }
+</script>
+ 
+ </head>
+ <body>
+<form action="search/search.php" method="get" 
+                              onsubmit='return redirect();'>
+<!-- pretty much the same thing except you remove the return false  !-->
+<input type="text" name="query" id="query"  value="Enter your answer..." columns="2" 
+autocomplete="off" delay="1500"  
+onfocus="if(this.value==this.defaultValue)this.value=''" 
+onblur="if(this.value=='')this.value=this.defaultValue" >
+<input type="submit" value=">" id="submit">
+<input type="hidden" name="search" value="1">
+</form> 
+</body>
+</html>
