@@ -108,10 +108,8 @@ body {
 }
 a {
   text-decoration: none;
-}
-.green a {
   color: green;
-    }
+}
 </style>
 </head>
 <body>
@@ -128,6 +126,69 @@ a {
     <center><h1 style="color: darkgreen">Whoops!<br></h1>
     <p>Looks like you tried to access a page that doesn't exist... yet.</p>
     <img src="http://www.valleyofunicorns.com/images/horse_images/811_ad.png">
+    <p><em>Since you are here, I'll link you a random song that I enjoy quite a lot. <br>Maybe you'll like it, too? Or you already know it... in this case, <a href="javascript:window.location.reload();">click here for a different song.</a></em>
+    <p id="song">
+<script>
+var text;
+switch (Math.ceil(Math.random() * 15)) {
+    default:
+    // Jebaited x 12 GWA GWA GWA
+        var str = "Together Forever";
+        var result = str.link("https://sss");
+        break;
+    // Every other song :D Maybe I'll add a hundred for a nice pool of songs.
+    case 1:
+        var str = "A Day in the Life";
+        var result = str.link("https://sss");
+        break;
+    case 2:
+        var str = "Hello Goodbye";
+        var result = str.link("https://sss");
+        break;
+    case 3:
+        var str = "She Loves You";
+        var result = str.link("https://sss");
+        break;
+    case 4:
+        var str = "Eleanor Rigby";
+        var result = str.link("https://sss");
+        break;
+    case 5:
+        var str = "Here Comes The Sun";
+        var result = str.link("https://sss");
+        break;
+    case 6:
+        var str = "Hey Jude";
+        var result = str.link("https://sss");
+        break;
+    case 7:
+        var str = "Yellow Submarine";
+        var result = str.link("https://sss");
+        break;
+    case 8:
+        var str = "Twist and Shout";
+        var result = str.link("https://sss");
+        break;
+    case 9:
+        var str = "Come Together";
+        var result = str.link("https://sss");
+        break;
+    case 10:
+        var str = "I Me Mine";
+        var result = str.link("https://sss");
+        break;
+    case 11:
+        var str = "Woman";
+        var result = str.link("https://sss");
+        break;
+    case 12:
+        var str = "Woman";
+        var result = str.link("https://sss");
+        break;
+}
+document.getElementById("song").innerHTML = text;
+document.getElementById("song").innerHTML = result;
+</script></p>
     <h2 style="color: green">404 Error</h2>
     </center>
   </div>
